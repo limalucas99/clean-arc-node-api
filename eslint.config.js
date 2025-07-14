@@ -12,6 +12,7 @@ module.exports = (async function config() {
         '@typescript-eslint/no-explicit-any': 'off', // TODO - Enable this rule
         '@typescript-eslint/strict-boolean-expressions': 'off', 
         '@typescript-eslint/no-unsafe-member-access': 'off', // TODO - Enable this rule
+        '@typescript-eslint/method-signature-style': 'off' 
       },
       files: ['**/*.js', '**/*.ts'],
       ignores: ["dist/**", "node_modules/**"],
