@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { SignUpController } from "./signup";
 
 describe("Signup Controller", () => {
@@ -10,9 +12,8 @@ describe("Signup Controller", () => {
         passwordConfirmation: "any_password",
       },
     };
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const httpResponse = sut.handle(httpRequest);
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     expect(httpResponse.statusCode).toBe(400);
+    expect(httpResponse.body).toEqual(new Error("Missing param: name"));
   });
 });
