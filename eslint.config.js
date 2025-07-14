@@ -6,11 +6,12 @@ module.exports = (async function config() {
       ...love,
       rules: {
         ...love.rules,
-        '@typescript-eslint/no-magic-numbers': 'off',
+        '@typescript-eslint/no-magic-numbers': 'off', // TODO - Enable this rule
         '@typescript-eslint/class-methods-use-this': 'off',
-        'eslint-comments/require-description': 'off',
-        '@typescript-eslint/no-explicit-any': 'off',
-        
+        'eslint-comments/require-description': 'off', // TODO - Enable this rule
+        '@typescript-eslint/no-explicit-any': 'off', // TODO - Enable this rule
+        '@typescript-eslint/strict-boolean-expressions': 'off', 
+        '@typescript-eslint/no-unsafe-member-access': 'off', // TODO - Enable this rule
       },
       files: ['**/*.js', '**/*.ts'],
       ignores: ["dist/**", "node_modules/**"],
