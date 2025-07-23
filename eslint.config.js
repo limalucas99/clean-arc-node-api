@@ -19,7 +19,7 @@ module.exports = (async function config() {
         'promise/avoid-new': 'off',
       },
       files: ['**/*.js', '**/*.ts'],
-      ignores: ["dist/**", "node_modules/**"],
+      ignores: ["dist/**", "node_modules/**", "coverage/**"],
     },
   ]
 })()
